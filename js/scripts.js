@@ -1,20 +1,17 @@
-function playerInfo(status,score){
-  this.playerStatus =status;
-  this.score = score;
+
+
+var roll= Math.floor((Math.random() * 6) + 1);
+var totalScore =0 ;
+
+
+function replay(){
+if(roll==1){
+  alert("repeat");
 }
-
-playerInfo.prototype.rollDice = function () {
-  return Math.floor((Math.random() * 6) + 1);
-};
-
-var player1 = new playerInfo(true,0);
-var player2 = new playerInfo(true,0);
-
-
-function playerOne(){
-  return player1.rollDice();
 }
+replay();
 
-function playerTwo(){
-  return player2.rollDice();
+if(roll>1&& roll<6){
+  score=roll+=roll;
+  alert(score);
 }
