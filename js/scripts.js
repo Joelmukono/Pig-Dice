@@ -9,3 +9,8 @@ playerInfo.prototype.rollDice = function () {
 
 var player1 = new playerInfo(true,0);
 var player2 = new playerInfo(true,0);
+
+
+function playerOne(){
+  return player1.rollDice();
+}
