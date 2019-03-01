@@ -14,3 +14,7 @@ var player2 = new playerInfo(true,0);
 function playerOne(){
   return player1.rollDice();
 }
+
+function playerTwo(){
+  return player2.rollDice();
+}
