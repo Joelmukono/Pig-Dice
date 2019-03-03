@@ -35,7 +35,12 @@ function totalRolls(){
     playerOneScore = playerOne.rollDice();
     playerOneTotalScoreArray.push(playerOneScore);
     score=score+playerOneScore;
-    alert(score);
+    // if(score==1){
+    //   alert("no points");
+    // }else{
+    //   alert(score);
+    // }
+
   }
 }
 totalRolls();
