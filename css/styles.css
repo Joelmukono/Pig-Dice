@@ -4,6 +4,7 @@
   color:white;
   border-radius:15px;
   height: 500px;
+  font-family: 'ZCOOL QingKe HuangYou', cursive;
 
 }
 .playerTwo{
@@ -12,16 +13,19 @@
   color:white;
   border-radius:15px;
   height: 500px;
+  font-family: 'ZCOOL QingKe HuangYou', cursive;
 
 }
 .controls{
   text-align:center;
   padding-top:100px;
+  font-family: 'ZCOOL QingKe HuangYou', cursive;
 
 }
 .controls input{
   border:none;
   padding:20px;
+  font-family: 'ZCOOL QingKe HuangYou', cursive;
 }
 body{
   background-color:#D3D3D3;
