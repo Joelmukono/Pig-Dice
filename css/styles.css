@@ -21,9 +21,24 @@
 }
 .controls input{
   border:none;
-  padding:40px;
+  padding:20px;
 }
 body{
   background-color:#D3D3D3;
   padding:70px;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+  .playerOne{
+    width:200px;
+  }
+  .playerTwo{
+    width:200px;
+  }
+  .controls{
+    width:200px;
+  }
 }

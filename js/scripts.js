@@ -34,8 +34,10 @@ function totalRollsOne(){
     if (playerOneScore==1){
         score=0;
         document.getElementById('rollCount1').innerHTML = "You score nothing";
+        $("#rolls").hide();
+        $("#rolls2").show();
     }else if(score == 100){
-        document.getElementById('rollCount2').innerHTML = "You Won";
+        document.getElementById('rollCount2').innerHTML = "player one You Won";
     }
 
   }
@@ -50,11 +52,23 @@ function totalRollsTwo(){
 
     if (playerTwoScore==1){
         score2=0;
+        $("#rolls").show();
+        $("#rolls2").hide();
         document.getElementById('rollCount2').innerHTML = "You score nothing";
 
     }else if(score2 == 100){
-        document.getElementById('rollCount2').innerHTML = "You Won";
+        document.getElementById('rollCount2').innerHTML = "Player 2 You Won";
     }
 
   }
 }
+
+$(document).ready(function(){
+  $('#hold').click( function () {
+  $('#rolls').hide();
+  $('#rolls2').show();
+  $('#rolls').show();
+  $('#rolls2').hide();
+});
+
+});
