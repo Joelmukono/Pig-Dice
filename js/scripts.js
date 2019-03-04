@@ -67,8 +67,15 @@ $(document).ready(function(){
   $('#hold').click( function () {
   $('#rolls').hide();
   $('#rolls2').show();
-  $('#rolls').show();
-  $('#rolls2').hide();
+  $('#hold2').show();
+
+});
+
+$('#hold2').click( function () {
+$('#rolls2').hide();
+$('#rolls').show();
+$
+
 });
 
 });
