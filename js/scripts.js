@@ -31,12 +31,15 @@ function checkOne(){
 //checkOne();
 
 function totalRollsOne(){
-  for(var i=0;i>=0;i++){
+  for(var i=0;i<=1;i++){
     playerOneScore = playerOne.rollDice();
     playerOneTotalScoreArray.push(playerOneScore);
     score=score+playerOneScore;
     document.getElementById('rollCount1').innerHTML = score;
 
+    if (score==1){
+      document.getElementById('rollCount1').innerHTML = score;
+    }
 
   }
 }

@@ -17,4 +17,9 @@
 .controls{
   text-align:center;
   padding-top:100px;
+
+}
+.controls input{
+  border:none;
+  padding:40px;
 }
