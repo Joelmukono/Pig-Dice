@@ -30,17 +30,13 @@ function checkOne(){
 
 //checkOne();
 
-function totalRolls(){
-  for(var i=0;i<=150;i++){
+function totalRollsOne(){
+  for(var i=0;i>=0;i++){
     playerOneScore = playerOne.rollDice();
     playerOneTotalScoreArray.push(playerOneScore);
     score=score+playerOneScore;
-    // if(score==1){
-    //   alert("no points");
-    // }else{
-    //   alert(score);
-    // }
+    document.getElementById('rollCount1').innerHTML = score;
+
 
   }
 }
-totalRolls();
