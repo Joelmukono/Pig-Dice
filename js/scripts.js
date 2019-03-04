@@ -17,12 +17,11 @@ score2 =0;
 playerOneTotalScoreArray = [];
 playerTwoTotalScoreArray = [];
 
-playerOneScoreArray = [];
 
 
 
 
-//checkOne();
+
 
 function totalRollsOne(){
   for(var i=0;i<=0;i++){
