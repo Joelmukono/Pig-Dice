@@ -13,32 +13,47 @@ playerInfo.prototype.rollDice= function(){
  var playerTwo = new playerInfo();
 
 score = 0;
+score2 =0;
 playerOneTotalScoreArray = [];
+playerTwoTotalScoreArray = [];
+
 playerOneScoreArray = [];
 
 
 
 
-
-function checkOne(){
-  if(playerOneScore==1){
-
-    alert("you score nothing");
-
-  }
-}
-
 //checkOne();
 
 function totalRollsOne(){
-  for(var i=0;i<=1;i++){
+  for(var i=0;i<=0;i++){
     playerOneScore = playerOne.rollDice();
     playerOneTotalScoreArray.push(playerOneScore);
     score=score+playerOneScore;
     document.getElementById('rollCount1').innerHTML = score;
 
-    if (score==1){
-      document.getElementById('rollCount1').innerHTML = score;
+    if (playerOneScore==1){
+        score=0;
+        document.getElementById('rollCount1').innerHTML = "You score nothing";
+    }else if(score == 100){
+        document.getElementById('rollCount2').innerHTML = "You Won";
+    }
+
+  }
+}
+
+function totalRollsTwo(){
+  for(var i=0;i<=0;i++){
+    playerTwoScore = playerTwo.rollDice();
+    playerTwoTotalScoreArray.push(playerTwoScore);
+    score2=score2+playerTwoScore;
+    document.getElementById('rollCount2').innerHTML = score2;
+
+    if (playerTwoScore==1){
+        score2=0;
+        document.getElementById('rollCount2').innerHTML = "You score nothing";
+
+    }else if(score2 == 100){
+        document.getElementById('rollCount2').innerHTML = "You Won";
     }
 
   }
