@@ -68,13 +68,13 @@ $(document).ready(function(){
   $('#rolls2').show();
   $('#hold2').show();
 
-});
+ });
 
-$('#hold2').click( function () {
-$('#rolls2').hide();
-$('#rolls').show();
-$
+  $('#hold2').click( function () {
+  $('#rolls2').hide();
+  $('#rolls').show();
+  $
 
-});
+ });
 
 });
